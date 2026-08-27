@@ -78,3 +78,27 @@ The output represents:
 <img width="1745" height="528" alt="image" src="https://github.com/user-attachments/assets/638f93f3-37dd-4d4c-b021-b8915392694a" />
 
 *TensorFlow/Keras summary of the CardioSense 1D CNN architecture.*
+
+## Model Training
+
+The CNN was trained in Google Colab using TensorFlow and Keras. The prepared ECG heartbeat samples were divided into:
+
+- **80% training data**
+- **20% testing data**
+
+The model was trained for 10 epochs using binary classification.
+
+### Preliminary Training Results
+
+| Metric | Reported value |
+|---|---:|
+| Training accuracy | 99.91% |
+| Training loss | 0.0019 |
+
+These values describe performance on the training data. They do not, by themselves, confirm how well the model performs on unseen ECG data.
+
+Test accuracy, precision, recall, F1-score, and a confusion matrix will be added after the evaluation results have been verified from the training notebook.
+<img width="778" height="485" alt="image" src="https://github.com/user-attachments/assets/f979cca6-a429-4987-84b6-a14317ebcc9b" />
+
+*CNN training output recorded in Google Colab.*
+
