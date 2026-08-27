@@ -102,3 +102,18 @@ Test accuracy, precision, recall, F1-score, and a confusion matrix will be added
 
 *CNN training output recorded in Google Colab.*
 
+## TensorFlow Lite and TinyML Deployment
+
+After training, the Keras model was converted to TensorFlow Lite so that it could be deployed on the resource-constrained ESP32.
+
+The conversion was performed using:
+
+```python
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+converter.optimizations = [tf.lite.Optimize.DEFAULT]
+tflite_model = converter.convert()
+
+<img width="747" height="612" alt="image" src="https://github.com/user-attachments/assets/f5fb5341-9b97-4916-9628-a7ccf2c1a3ad" />
+
+*Arduino test program used to verify that the TensorFlow Lite model was accessible on the ESP32.*
+
