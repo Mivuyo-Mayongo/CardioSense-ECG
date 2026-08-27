@@ -38,3 +38,22 @@ In the graph:
 
 *Example ECG signal from MIT-BIH record 119 showing ventricular premature beats.*
 
+## ECG Signal Preprocessing
+
+The continuous ECG recordings cannot be passed directly to the CNN. Each recording must first be converted into consistently sized heartbeat samples.
+
+The preprocessing pipeline:
+
+1. Loads an ECG signal and its heartbeat annotations.
+2. Locates the centre of each annotated heartbeat.
+3. Extracts a window containing 200 ECG data points.
+4. Assigns the heartbeat a normal or abnormal label.
+5. Stores the heartbeat window for model training and evaluation.
+
+Each resulting 200-value array represents one heartbeat and matches the input shape expected by the CNN.
+
+### Example Heartbeat Window
+<img width="776" height="415" alt="image" src="https://github.com/user-attachments/assets/58804171-7645-4585-8082-d400086ef993" />
+
+*Example of a normal heartbeat segmented into a 200-sample input window.*
+
