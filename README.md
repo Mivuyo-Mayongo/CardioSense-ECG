@@ -5,3 +5,21 @@
 CardioSense combines an AD8232 ECG sensor, an ESP32 microcontroller, and a one-dimensional Convolutional Neural Network (1D CNN) to capture ECG signals and classify heartbeats as normal or abnormal.
 
 > **Project status:** In development. Live ECG acquisition and visualization are working. Real-time TinyML classification on the ESP32 is the current phase.
+## Project Overview
+
+Cardiovascular abnormalities may not always be detected early, particularly where continuous monitoring equipment is unavailable or expensive. CardioSense explores a portable and low-cost approach to ECG monitoring and on-device heart abnormality detection.
+
+The project is designed to:
+
+- Capture ECG signals using the AD8232 sensor
+- Sample ECG data using the ESP32
+- Process 200-sample heartbeat windows
+- Run a TensorFlow Lite model on the ESP32
+- Classify heartbeats as normal or abnormal
+- Display or transmit the classification results
+
+### ECG Dataset Exploration
+
+The model is being developed using ECG records from the MIT-BIH Arrhythmia Database. Record 100 was initially explored as an example containing predominantly normal heartbeats.
+<img width="795" height="379" alt="mit-bih-record-100-normal-ecg" src="https://github.com/user-attachments/assets/024be67d-7e8b-49e3-ab6c-c667628bdc33" />
+*Example ECG signal from MIT-BIH record 100.*
