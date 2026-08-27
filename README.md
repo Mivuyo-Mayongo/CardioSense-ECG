@@ -117,3 +117,26 @@ tflite_model = converter.convert()
 
 *Arduino test program used to verify that the TensorFlow Lite model was accessible on the ESP32.*
 
+## ESP32 Model Verification
+
+The ESP32 was configured and tested using:
+
+- **Board:** ESP32 Dev Module
+- **Port:** COM4
+- **Baud rate:** 115200
+- **Arduino IDE:** 2.3.8
+- **ESP32 board package:** 2.0.17
+
+After compiling and uploading the model-loading program, the Serial Monitor reported:
+
+- `ECG TinyML Model Loaded`
+- Model size: **58,400 bytes**
+- `Model Stored Successfully`
+
+This confirmed that the generated model byte array was compiled into the firmware and could be accessed by the ESP32.
+
+> This test verifies that the model data is available on the ESP32. It does not yet perform classification inference.
+<img width="1602" height="331" alt="image" src="https://github.com/user-attachments/assets/6ae05d53-e6cc-4476-9110-6047a67cf884" />
+
+*Serial Monitor output confirming that the 58,400-byte model array was accessible on the ESP32.*
+
