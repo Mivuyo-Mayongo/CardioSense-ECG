@@ -24,3 +24,16 @@ The model is being developed using ECG records from the MIT-BIH Arrhythmia Datab
 <img width="795" height="379" alt="mit-bih-record-100-normal-ecg" src="https://github.com/user-attachments/assets/024be67d-7e8b-49e3-ab6c-c667628bdc33" />
 
 *Example ECG signal from MIT-BIH record 100.*
+
+### Abnormal ECG Example
+
+Record 119 was explored as an example containing ventricular premature beats (VPBs), a type of cardiac arrhythmia.
+
+In the graph:
+
+- **N** represents a normal heartbeat.
+- **V** represents a ventricular premature beat.
+- The ventricular premature beats have a wider and more distorted waveform than the normal beats.
+<img width="766" height="408" alt="image" src="https://github.com/user-attachments/assets/7c977c92-3700-4c80-9a7e-ea5e59258181" />
+*Example ECG signal from MIT-BIH record 119 showing ventricular premature beats.*
+
