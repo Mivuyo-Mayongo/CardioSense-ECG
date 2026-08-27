@@ -57,3 +57,24 @@ Each resulting 200-value array represents one heartbeat and matches the input sh
 
 *Example of a normal heartbeat segmented into a 200-sample input window.*
 
+## CNN Model Architecture
+
+A one-dimensional Convolutional Neural Network (1D CNN) was developed using TensorFlow and Keras. The network learns patterns directly from the shape of each 200-sample ECG heartbeat window.
+
+The architecture contains:
+
+1. **Conv1D layer with 16 filters** to detect basic ECG waveform features.
+2. **MaxPooling1D layer** to reduce the feature-map size.
+3. **Conv1D layer with 32 filters** to learn more detailed waveform patterns.
+4. **MaxPooling1D layer** for further dimensionality reduction.
+5. **Flatten layer** to convert the extracted features into a single vector.
+6. **Dense layer with 32 neurons** to combine the learned features.
+7. **Sigmoid output layer** to produce a binary classification probability.
+
+The output represents:
+
+- `0` — Normal heartbeat
+- `1` — Abnormal heartbeat
+<img width="1745" height="528" alt="image" src="https://github.com/user-attachments/assets/638f93f3-37dd-4d4c-b021-b8915392694a" />
+
+*TensorFlow/Keras summary of the CardioSense 1D CNN architecture.*
