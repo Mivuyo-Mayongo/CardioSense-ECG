@@ -35,5 +35,6 @@ In the graph:
 - **V** represents a ventricular premature beat.
 - The ventricular premature beats have a wider and more distorted waveform than the normal beats.
 <img width="766" height="408" alt="image" src="https://github.com/user-attachments/assets/7c977c92-3700-4c80-9a7e-ea5e59258181" />
+
 *Example ECG signal from MIT-BIH record 119 showing ventricular premature beats.*
 
