@@ -22,4 +22,5 @@ The project is designed to:
 
 The model is being developed using ECG records from the MIT-BIH Arrhythmia Database. Record 100 was initially explored as an example containing predominantly normal heartbeats.
 <img width="795" height="379" alt="mit-bih-record-100-normal-ecg" src="https://github.com/user-attachments/assets/024be67d-7e8b-49e3-ab6c-c667628bdc33" />
+
 *Example ECG signal from MIT-BIH record 100.*
