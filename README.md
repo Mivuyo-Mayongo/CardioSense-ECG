@@ -112,7 +112,7 @@ The conversion was performed using:
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
 converter.optimizations = [tf.lite.Optimize.DEFAULT]
 tflite_model = converter.convert()
-
+```
 <img width="747" height="612" alt="image" src="https://github.com/user-attachments/assets/f5fb5341-9b97-4916-9628-a7ccf2c1a3ad" />
 
 *Arduino test program used to verify that the TensorFlow Lite model was accessible on the ESP32.*
